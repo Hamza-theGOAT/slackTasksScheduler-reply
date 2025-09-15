@@ -1,0 +1,22 @@
+{
+    "Task1" : {
+        "InitHour" : 1,
+        "InitMin" : 30,
+        "SubseqReminder" : 5,
+        "SourceChannel" : "CHANNEL/USER ID",
+        "StorageChannel" : "CHANNEL/USER ID",
+        "ReplTemp" : "ExpectedReply",
+        "inMsg" : "Task Description",
+        "outMsg" : "✅ Reply Confirmation"
+    },
+    "Task2" : {
+        "InitHour" : 1,
+        "InitMin" : 30,
+        "SubseqReminder" : 5,
+        "SourceChannel" : "CHANNEL/USER ID",
+        "StorageChannel" : "CHANNEL/USER ID",
+        "ReplTemp" : "ExpectedReply",
+        "inMsg" : "Task Description",
+        "outMsg" : "✅ Reply Confirmation"
+    }
+}
