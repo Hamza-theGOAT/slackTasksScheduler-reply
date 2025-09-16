@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 def getCredz():
     load_dotenv()
-    userToken = os.getenv('userToken')
+    userToken = os.getenv('USERTOKEN')
     client = WebClient(token=userToken)
 
     with open('tasks.json', 'r', encoding='utf-8') as j:
