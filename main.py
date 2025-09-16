@@ -28,11 +28,15 @@ async def slackMsg(client, channel, msg):
 
 async def checkReply(client, channel, reply, ts):
     # Include fail safe for 'thread_not_found --->
-    response = client.conversations_replies(
-        channel=channel,
-        ts=ts,
-        inclusive=True
-    )
+    try:
+        response = client.conversations_replies(
+            channel=channel,
+            ts=ts,
+            inclusive=True
+        )
+    except Exception as e:
+        print(f"Error fetching conversation...\n{e}")
+        return None
 
     # Ensure 'messages' exists and is a list
     msgs = response.get('messages', [])
